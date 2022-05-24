@@ -16,8 +16,6 @@ fetch(myRequest)
     })
     .catch(console.error);
 
-
-
 function Random(number) {
     const random_number = Math.floor(Math.random() * number)
     return random_number
