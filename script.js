@@ -1,7 +1,10 @@
 const Btn = document.getElementById('Btn')
 
+import opisywarka from '/data.js'
 
-const myRequest = new Request('opisywarka.json');
+
+
+/* const myRequest = new Request('opisywarka.json');
 
 fetch(myRequest)
     .then(response => response.json())
@@ -15,8 +18,16 @@ fetch(myRequest)
             document.getElementById('odczucia_wynik').innerText = data.Odczucia[Random(data.Odczucia.length)]
         })
     })
-    .catch(console.error);
+    .catch(console.error); */
 
+Btn.addEventListener('click', () => {
+
+    document.getElementById('dzwiek_wynik').innerText = opisywarka.Dzwiek[Random(opisywarka.Dzwiek.length)]
+    document.getElementById('widok_wynik').innerText = opisywarka.Widok[Random(opisywarka.Widok.length)]
+    document.getElementById('dotyk_wynik').innerText = opisywarka.Dotyk[Random(opisywarka.Dotyk.length)]
+    document.getElementById('zapach_wynik').innerText = opisywarka.Zapach[Random(opisywarka.Zapach.length)]
+    document.getElementById('odczucia_wynik').innerText = opisywarka.Odczucia[Random(opisywarka.Odczucia.length)]
+})
 
 
 function Random(number) {
