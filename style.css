@@ -10,15 +10,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+
     margin:0;
 
 }
 
 .container {
     width: 80vw;
-
+    top: 0;
     background-color: antiquewhite;
     
 
@@ -41,4 +40,15 @@ p{
 button {
     justify-content: center;
     align-items: center;
+}
+
+.history {
+    width: 80vw;
+    height: 30vh;
+    overflow: hidden;
+    font-size: 11px;
+
+}
+.history ul li{
+    margin-bottom: 5px;
 }
